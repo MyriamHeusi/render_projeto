@@ -1,0 +1,9 @@
+# Ignorar pastas de ambiente virtual e cache
+venv_render/
+__pycache__/
+.env
+*.pyc
+
+# Ignorar arquivos temporários
+.DS_Store
+Thumbs.db

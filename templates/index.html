@@ -1,0 +1,28 @@
+﻿{% extends "base.html" %}
+{% block content %}
+<section class="hero">
+  <h1>💡 {{ name or "Myriam Martins Heusi" }}</h1>
+  <p class="subtitle">{{ tagline or "Analista de Dados & BI | Flask + Render" }}</p>
+  <div class="badges">
+    <span class="badge">Flask</span><span class="badge">Render</span>
+    <span class="badge">Python 3.11</span><span class="badge">Gunicorn</span>
+    <span class="badge">Power BI</span>
+  </div>
+  <a class="primary-btn" href="{{ cta_href or '/api' }}">{{ cta_label or 'Ver JSON da API' }}</a>
+</section>
+<section class="cards">
+  <article class="card">
+    <h3>Sobre o Projeto</h3>
+    <p>App Flask para o Sprint 5: rotas, JSON e layout simples para apresentar resultados.</p>
+    <ul class="list"><li><code>/</code> — home</li><li><code>/api</code> — JSON</li><li><code>/health</code> — status 200</li></ul>
+  </article>
+  <article class="card">
+    <h3>Tecnologias</h3>
+    <ul class="list"><li>Flask + Jinja</li><li>Gunicorn</li><li>Render (CI/CD)</li></ul>
+  </article>
+  <article class="card">
+    <h3>Próximos Passos</h3>
+    <ol class="list"><li>Conectar dados (CSV/SQL/API)</li><li>Página “Resultados”</li><li>Deploy</li></ol>
+  </article>
+</section>
+{% endblock %}

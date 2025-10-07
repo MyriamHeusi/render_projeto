@@ -1,0 +1,23 @@
+﻿:root{--bg:#0b0f17;--panel:#0f1629;--text:#e8ecf3;--muted:#9aa3b2;--accent:#5aa0ff;--accent2:#a88bff;--gold:#f2c94c;--border:#223058}
+*{box-sizing:border-box}html,body{height:100%}
+body{margin:0;font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;background:var(--bg);color:var(--text);overflow-x:hidden}
+.bg-orbs::before,.bg-orbs::after{content:"";position:fixed;inset:-20% -10% auto auto;width:60vw;height:60vw;background:radial-gradient(closest-side,#213270 25%,transparent 70%);filter:blur(60px);opacity:.35;pointer-events:none;z-index:-1}
+.bg-orbs::after{inset:auto auto -25% -20%;width:70vw;height:70vw;background:radial-gradient(closest-side,#6b4eff33 25%,transparent 70%)}
+.container{max-width:1100px;margin:0 auto;padding:24px}
+.nav{display:flex;align-items:center;justify-content:space-between;margin-bottom:8px}
+.brand{display:flex;gap:10px;align-items:center;font-weight:800;letter-spacing:.4px}
+.logo{display:inline-grid;place-items:center;width:28px;height:28px;border-radius:8px;background:linear-gradient(135deg,var(--accent),var(--accent2));color:#0b0f17;font-weight:900;box-shadow:0 6px 18px #0008,inset 0 1px 0 #ffffff22}
+.api-link{color:var(--muted);text-decoration:none;border:1px solid var(--border);padding:8px 12px;border-radius:12px}
+.api-link:hover{color:var(--text);border-color:#334577}
+.hero{margin-top:22px;margin-bottom:10px}
+.hero h1{margin:0 0 6px;font-size:38px;font-weight:800;background:linear-gradient(90deg,var(--accent),var(--gold),var(--accent2));-webkit-background-clip:text;background-clip:text;color:transparent}
+.subtitle{color:var(--muted);max-width:760px;margin:0 0 16px}
+.badges{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:18px}
+.badge{border:1px solid var(--border);color:#cfd6e6;padding:6px 10px;border-radius:999px;font-size:12px;background:linear-gradient(180deg,#0c1222,#0a1020)}
+.primary-btn{display:inline-block;text-decoration:none;color:#0b0f17;font-weight:800;background:linear-gradient(90deg,var(--gold),var(--accent));padding:12px 18px;border-radius:14px;box-shadow:0 10px 25px #0007}
+.primary-btn:hover{transform:translateY(-1px)}
+.cards{display:grid;gap:18px;margin-top:26px;grid-template-columns:repeat(auto-fit,minmax(260px,1fr))}
+.card{background:linear-gradient(180deg,#0f1629,#0c1221);border:1px solid var(--border);padding:18px;border-radius:18px;box-shadow:0 10px 30px rgba(0,0,0,.25),inset 0 1px 0 rgba(255,255,255,.03)}
+.card h3{margin:0 0 10px;font-size:18px}
+.list{margin:0;padding-left:18px;color:var(--muted)}
+.footer{margin:38px 0 10px;color:var(--muted);text-align:center}

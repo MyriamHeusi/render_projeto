@@ -1,4 +1,4 @@
-# 🌐 Projeto Flask — Aplicação simples com deploy no Render
+# 🌐 Projeto Flask — Aplicação com deploy no Render
 
 Aplicação web minimalista construída com **Python (Flask)** para demonstrar:
 - estrutura de projeto,

@@ -13,7 +13,7 @@ Aplicação web minimalista construída com **Python (Flask)** para demonstrar:
 
 ## 🚀 Tecnologias & Serviços
 - **Backend:** Python 3.11 · Flask · Gunicorn  
-- **Frontend:** HTML + CSS (Jinja Templates – sem framework JS)  
+- **Frontend:** HTML + CSS 
 - **Hospedagem/CI:** Render.com (Web Service conectado ao GitHub)  
 - **Outros:** Git/GitHub, ambiente virtual (`venv`)
 
